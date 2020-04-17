@@ -77,3 +77,24 @@ text (string) — текст сообщения;
     response["updates"][0][7]
     {'attach1_type': 'doc', 'attach1': '510166866_546393866'}
 
+
+# Отправка сообщения
+Просто отправка текста
+```python
+    self.send_msg(peer_id, send_text)
+    peer_id = response["updates"][0][6]["from"] # отправка пользователю
+    # или
+    peer_id = response["updates"][0][3] # отправка в беседу
+    send_text = "some text"
+```
+
+Отправка изображения
+
+```python
+    self.send_img(peer_id, send_text, attachment)
+    peer_id = response["updates"][0][6]["from"] # отправка пользователю
+    # или
+    peer_id = response["updates"][0][3] # отправка в беседу
+    attachment = "photo" + твой id вк + "_" + id изображения в твоем альбоме
+    # пример - photo510166866_457241739
+```
