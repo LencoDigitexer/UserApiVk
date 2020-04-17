@@ -3,7 +3,7 @@
 
 # Настройка
 
-     pip3 install -r requirements.txt
+     pip install -r requirements.txt
 
 В password.py необходимо записать логин и пароль от вк
 
