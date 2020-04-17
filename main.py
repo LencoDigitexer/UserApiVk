@@ -55,7 +55,7 @@ class Server:
                         ts = master_key["ts"]
                         response = requests.get("https://{}?act=a_check&key={}&ts={}&wait=25&mode=2&version=3".format(server, keygen, ts)).text
                         response = json.loads(response)
-                        print(response["updates"][0][5])
+                        print(response["updates"][0])
 
                     except:
                         pass
