@@ -3,7 +3,7 @@
 
 # Настройка
 
-     pip install -r requirements.txt
+     pip install -r requirements.txt --user
 
 В password.py необходимо записать логин и пароль от вк
 
@@ -18,6 +18,8 @@
 
 # Работа скрипта
 
+    python main.py
+    
 В скрипте main.py сделана реализация приёма сообщений.
 В функции start
 
