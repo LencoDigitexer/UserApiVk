@@ -22,7 +22,7 @@ class Server:
             self.vk_api = self.vk.get_api()
 
 
-        def send_img(self, send_id):
+        def send_img(self, send_id, attachment):
                 """
                 Отправка сообщения через метод messages.send
                 :param send_id: vk id пользователя, который получит сообщение
@@ -30,7 +30,7 @@ class Server:
                 :return: None
                 """
                 self.vk_api.messages.send(peer_id=send_id,
-                                          attachment = "photo510166866_457241739",
+                                          attachment = attachment,
                                           random_id=123456 + random.randint(1,27))
         def send_msg(self, send_id, message):
             """
